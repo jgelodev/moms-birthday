@@ -80,15 +80,15 @@
         var center = item.top + item.height / 2 - scrollY;
 
         // 0 = off screen, 1 = fully present. Works in both scroll directions.
-        var fadeIn = clamp((viewportH - center) / (viewportH * 0.35), 0, 1);
+        var fadeIn = clamp((viewportH - center) / (viewportH * 0.2), 0, 1);
         var fadeOut = clamp(center / (viewportH * 0.2), 0, 1);
         var targetProgress = Math.min(fadeIn, fadeOut);
 
         // Gentle counter-drift for photos
         var targetShift = (center - viewportH / 2) * -0.03;
 
-        item.progress += (targetProgress - item.progress) * 0.12;
-        item.shift += (targetShift - item.shift) * 0.12;
+        item.progress += (targetProgress - item.progress) * 0.2;
+        item.shift += (targetShift - item.shift) * 0.2;
 
         if (Math.abs(targetProgress - item.progress) > 0.001 || Math.abs(targetShift - item.shift) > 0.05) {
           moving = true;
