@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday, Mom.</title>
+  <meta name="description" content="A birthday letter and family scrapbook for Mom.">
+  <meta name="theme-color" content="#F7F3EB">
+  <link rel="icon" href="data:,">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       SECTION 01 — THE OPENING / HERO
+       ============================================================ -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <svg class="envelope" viewBox="0 0 96 64" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="94" height="62" fill="#FBF9F4" stroke="#A68D75" stroke-width="1.5"/>
+          <path class="envelope-flap" d="M1 1 H95 L48 34 Z" fill="#E7DCCB" stroke="#A68D75" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+
+        <p class="hero-intro">Because some things deserve more than just a birthday greeting.</p>
+        <h1 class="hero-title">Happy Birthday, Mom.</h1>
+        <p class="hero-subtitle">A little something from all of us, with love.</p>
+
+        <a class="button" href="#letter">Open your letter</a>
+        <a class="scroll-cue" href="#letter">
+          <span class="scroll-cue-line" aria-hidden="true"></span>
+          <span>Scroll</span>
+        </a>
+      </div>
+
+      <!-- HERO PHOTO: replace src with your photo (for example assets/images/hero.jpg).
+           Set width and height to the photo's pixel size so the page does not jump while loading. -->
+      <figure class="hero-photo">
+        <img src="mama.jpg" width="1200" height="1500" fetchpriority="high"
+             alt="Placeholder for a family portrait. Replace with a photo of Mom and the family.">
+      </figure>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       SECTION 02 — A LETTER FOR YOU
+       ============================================================ -->
+  <section class="section section--tint letter-section" id="letter" aria-labelledby="letter-title">
+    <div class="letter-paper reveal">
+      <h2 class="letter-title" id="letter-title">A letter for you:)</h2>
+      <div class="divider" aria-hidden="true"><span class="divider-mark"></span></div>
+
+      <!-- ==========================================================
+           EDIT YOUR LETTER HERE
+           Replace the paragraphs below with your own words.
+           Keep each paragraph inside its own <p>...</p>.
+           ========================================================== -->
+      <div class="letter-body">
+        <p>Dear Mom,</p>
+
+        <p>I don’t think I say this enough, but I want you to know how grateful I am for everything you’ve done for us.</p>
+
+        <p>Growing up, there are so many little things we sometimes take for granted. The things you do every day, the sacrifices you make, the times you’ve put us before yourself, and all the ways you’ve made sure we’re okay.</p>
+
+        <p>I may not always express it properly, and I know I have a lot more growing up to do, but I hope you know how much I appreciate you.</p>
+
+        <p>Thank you for being there, for taking care of us, even from a distance.</p>
+
+        <p>I hope this birthday reminds you that you are super loved just as much as you make everyone around you feel loved.</p>
+
+        <p>We may not always say it, but me and Echo are INCREDIBLY lucky to have you.</p>
+
+        <p>HAPPY BIRTHDAY MAMA!</p>
+
+        <p>With all my love<333</p>
+      </div>
+
+      
+      <p class="letter-signature"><span class="hand">-G̶e̶l̶o̶a̶c̶e̶ Gelotin</span></p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 03 — LITTLE MOMENTS, BIG MEMORIES
+       ============================================================
+       PHOTO CONFIGURATION
+       Each <figure class="gallery-item"> is one photo.
+       - To replace a photo: change the img src to your file, set width and
+         height to the photo's pixel size, and update alt and figcaption.
+       - To add a photo: copy a whole <figure> block and change its contents.
+       - To remove a photo: delete its whole <figure> block.
+       - Size classes control layout: --wide, --medium, --small, --narrow,
+         and --offset (adds space above on desktop). Mix them for variety.
+       - Clicking a photo opens it in the viewer.
+       ============================================================ -->
+  <section class="section gallery-section" id="moments" aria-labelledby="moments-title">
+    <div class="container">
+      <header class="section-header reveal">
+        <h2 id="moments-title">Little moments, big memories.</h2>
+        <p>A collection of moments that we’ll always keep close.</p>
+      </header>
+
+      <div class="gallery">
+        <!-- Photo 1: Mom and me (landscape) -->
+        <figure class="gallery-item gallery-item--wide reveal">
+          <button type="button" class="gallery-trigger" data-lightbox-trigger aria-haspopup="dialog">
+            <img src="imageone.JPG" width="1500" height="1000" loading="lazy"
+                 alt="Placeholder for a photo of Mom and me. Replace with a real photo.">
+          </button>
+          <figcaption>Mom and Gelo</figcaption>
+        </figure>
+
+        <!-- Photo 2: Mom and my brother (portrait) -->
+        <figure class="gallery-item gallery-item--narrow gallery-item--offset reveal">
+          <button type="button" class="gallery-trigger" data-lightbox-trigger aria-haspopup="dialog">
+            <img src="imagetwo.jpg" width="1200" height="1500" loading="lazy"
+                 alt="Placeholder for a photo of Mom and my brother. Replace with a real photo.">
+          </button>
+          <figcaption>Mom and Echo</figcaption>
+        </figure>
+
+        <!-- Photo 3: Grandma (portrait) -->
+        <figure class="gallery-item gallery-item--small reveal">
+          <button type="button" class="gallery-trigger" data-lightbox-trigger aria-haspopup="dialog">
+            <img src="lola.JPG" width="1200" height="1500" loading="lazy"
+                 alt="Placeholder for a photo of Grandma. Replace with a real photo.">
+          </button>
+          <figcaption>Lola</figcaption>
+        </figure>
+
+        <!-- Photo 4: All of us together (landscape) -->
+        <figure class="gallery-item gallery-item--medium reveal">
+          <button type="button" class="gallery-trigger" data-lightbox-trigger aria-haspopup="dialog">
+            <img src="us.jpg" width="1500" height="1000" loading="lazy"
+                 alt="Placeholder for a photo of the whole family together. Replace with a real photo.">
+          </button>
+          <figcaption>Us</figcaption>
+        </figure>
+
+        <!-- Photo 5: A candid moment (portrait) -->
+        <figure class="gallery-item gallery-item--narrow reveal">
+          <button type="button" class="gallery-trigger" data-lightbox-trigger aria-haspopup="dialog">
+            <img src="cutecute.JPG" width="1200" height="1500" loading="lazy"
+                 alt="Placeholder for a candid family photo. Replace with a real photo.">
+          </button>
+          <figcaption>A candid moment</figcaption>
+        </figure>
+
+        <!-- Photo 6: Birthday celebration (landscape) -->
+        <figure class="gallery-item gallery-item--wide gallery-item--offset reveal">
+          <button type="button" class="gallery-trigger" data-lightbox-trigger aria-haspopup="dialog">
+            <img src="kulit.JPG" width="1500" height="1000" loading="lazy"
+                 alt="Placeholder for a photo from a birthday celebration. Replace with a real photo.">
+          </button>
+          <figcaption><3</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 04 — THINGS WE LOVE ABOUT YOU
+       ============================================================ -->
+  <section class="section" id="loves" aria-labelledby="loves-title">
+    <div class="container">
+      <header class="section-header reveal">
+        <h2 id="loves-title">Things we love about you.</h2>
+        <p>It’s not just the big things. It’s all the little things that make you who you are.</p>
+      </header>
+
+      <ul class="love-list">
+        <li class="love-note reveal"><p>Your strength, even during difficult days.</p></li>
+        <li class="love-note love-note--hand reveal"><p>The way you always look after us.</p></li>
+        <li class="love-note love-note--small reveal"><p>Your patience, even when we’re difficult.</p></li>
+        <li class="love-note love-note--hand reveal"><p>The sacrifices you’ve made without expecting anything in return.</p></li>
+        <li class="love-note reveal"><p>The little things you do that make our house feel like home.</p></li>
+        <li class="love-note love-note--xl reveal"><p>The way you continue to show up for us.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 05 — FROM YOUR FAMILY
+       ============================================================
+       Each <article class="family-letter"> is one message.
+       Replace the [bracketed] placeholders with real names and messages.
+       To remove a photo, delete its <figure class="family-photo"> block.
+       ============================================================ -->
+  <section class="section section--tint" id="family" aria-labelledby="family-title">
+    <div class="container">
+      <header class="section-header reveal">
+        <h2 id="family-title">From the people who love you.</h2>
+      </header>
+
+      <div class="family-letters">
+        <!-- Message 1: Me -->
+        <article class="family-letter reveal">
+          <p class="family-relation">Your eldest son</p>
+          <h3>Gelo</h3>
+          <figure class="family-photo">
+            <img src="crybaby.JPG" width="1200" height="1500" loading="lazy"
+                 alt="Placeholder for a photo to go with this message. Replace or delete.">
+          </figure>
+          <p class="family-message">
+            Out of all the billions of possibilities that could have existed, somehow, I ended up here, in this lifetime, with you as my mom.
+            always know that I love you, that I'm proud to be your son.</p>
+        </article>
+
+        <!-- Message 2: Younger brother -->
+        <article class="family-letter reveal">
+          <p class="family-relation">Your youngest son</p>
+          <h3>Echo</h3>
+          <figure class="family-photo">
+            <img src="echo.jpg" width="1500" height="1000" loading="lazy"
+                 alt="Placeholder for a photo to go with this message. Replace or delete.">
+          </figure>
+          <p class="family-message">Happy birthday, Ma! I hope you enjoy your special day. Thank you for always being the best mom. Love you so much, see you soon! ❤️</p>
+        </article>
+
+        <!-- Message 3: Grandmother -->
+        <article class="family-letter reveal">
+          <p class="family-relation">Your mother</p>
+          <h3>Eve</h3>
+          <figure class="family-photo">
+            <img src="lolaeve.jpg" width="1200" height="1500" loading="lazy"
+                 alt="Placeholder for a photo to go with this message. Replace or delete.">
+          </figure>
+          <p class="family-message">HAPPY BIRTDAT MY BEAUTIFUL ANAK..STAY HEALTHY!!OK.LOVE YOU.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 06 — THE FINAL MESSAGE / CLOSING
+       ============================================================ -->
+  <section class="closing" id="closing" aria-labelledby="closing-title">
+    <figure class="closing-photo reveal">
+      <img src="together.jpg" width="1500" height="1000" loading="lazy"
+           alt="Placeholder for a final family photograph. Replace with a photo of the whole family.">
+    </figure>
+
+    <p class="closing-lead reveal">No matter how old we get, we’ll always be your kids.</p>
+    <p class="closing-support reveal">Thank you for everything, Mom. We love you more than words can say.</p>
+    <h2 class="closing-title reveal" id="closing-title">Happy Birthday, Mom.</h2>
+  </section>
+
+  <footer class="site-footer">
+    <p>Made with love, by your family · <span class="birthday-year">2026</span></p>
+  </footer>
+
+  <!-- ============================================================
+       PHOTO VIEWER (lightbox)
+       Opened by any .gallery-trigger button. Controlled by js/script.js.
+       ============================================================ -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close photo">&times;</button>
+    <button type="button" class="lightbox-nav lightbox-prev" data-lightbox-prev aria-label="Previous photo">&lsaquo;</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button type="button" class="lightbox-nav lightbox-next" data-lightbox-next aria-label="Next photo">&rsaquo;</button>
+  </dialog>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-label="Placeholder photo, landscape orientation">
+  <rect width="1500" height="1000" fill="#E7DCCB"/>
+  <rect x="60" y="60" width="1380" height="880" fill="none" stroke="#B8A99A" stroke-width="4" stroke-dasharray="18 14"/>
+  <g fill="none" stroke="#A68D75" stroke-width="12" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M560 380 H680 L720 320 H780 L820 380 H940 V620 H560 Z"/>
+    <circle cx="750" cy="500" r="90"/>
+  </g>
+  <text x="750" y="740" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="48" fill="#514438">Replace with your photo</text>
+  <text x="750" y="810" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" fill="#514438" fill-opacity="0.8">placeholder-landscape.svg</text>
+</svg>
