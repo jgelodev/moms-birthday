@@ -8,7 +8,7 @@
 /* Letter stays fully readable; only a small slide-up remains */
 .js .letter-paper.reveal {
   opacity: 1;
-  transform: translate3d(0, calc((1 - var(--p, 0)) * 20px), 0);
+  transform: none;
 }
 
 :root {
